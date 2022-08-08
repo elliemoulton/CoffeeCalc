@@ -1,0 +1,47 @@
+<%-include('partials/header')%>
+
+  <div class="box">
+    <h1>Coffee Calculator</h1>
+
+<form class="calculator-input" action="/" method="post">
+  <div class="container input-grid">
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <h2>Select Your Brew Method</h2>
+      </div>
+      <div class="col-12 col-md-4">
+
+        <%-include('partials/dropdown')%>
+
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col-12 col-md-8">
+        <h2>How many cups?</h2>
+      </div>
+      <div class="col-12 col-md-4">
+        <input type="number" id="quantity" name="cupQuantity" min="1" max="10">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 calc-column">
+        <button type="submit" class="btn btn-primary btn-lg buttons" >Calculate</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+    <br>
+
+    <%# <h2>How to Brew</h2>
+
+    <h3>Grams of Coffee</h3>
+
+    <h3>Grams of Water</h3>
+
+    <h3>Grind</h3> %>
+
+  </div>
+
+  <%-include('partials/footer')%>

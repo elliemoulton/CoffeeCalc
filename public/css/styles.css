@@ -1,0 +1,57 @@
+body {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #192734 50%, #6C7B8C 50%);
+  min-height: 1000px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3% 3% 0 3%;
+}
+
+.backButton {
+  margin-top: 0;
+  margin-bottom: 5%
+}
+
+.box {
+  width: 55%;
+  margin: 50px auto;
+  background: #F9F9F9;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  background-color: #CBBBB0;
+  border-color: transparent;
+  filter: drop-shadow(4px 4px 0 #192734);
+}
+
+.buttons:hover {
+  background-color: #192734;
+  border-color: transparent;
+  filter: drop-shadow(0 0 0 #192734);
+}
+
+.brewInstructions {
+  margin: 4% 0;
+}
+
+.calc-column {
+  text-align: center;
+}
+
+.dropdown-toggle {
+  background-color: #6C7B8C !important;
+  border-color: transparent !important;
+}
+
+.input-grid {
+  padding: 3% 10%;
+}
+
+.row {
+  padding-top: 5%;
+}

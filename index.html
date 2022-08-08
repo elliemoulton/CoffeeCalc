@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>Coffee Calculator</title>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Coffee Calculator</h1>
+
+    <div class="container input-grid">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2>Select Your Brew Method</h2>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Brew Method <span class='selection'></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Filter</a></li>
+              <li><a class="dropdown-item" href="#">French Press</a></li>
+              <li><a class="dropdown-item" href="#">V60</a></li>
+              <li><a class="dropdown-item" href="#">Aeropress</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-12 col-md-8">
+          <h2>How many cups?</h2>
+        </div>
+        <div class="col-12 col-md-4">
+          <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 calc-column">
+          <button type="submit" class="btn btn-primary btn-lg calculate-button">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+
+    <!-- <h2>How to Brew</h2>
+
+    <h3>Grams of Coffee</h3>
+
+    <h3>Grams of Water</h3>
+
+    <h3>Grind</h3> -->
+
+  </div>
+  <!-- JavaScript -->
+  <script src='app.js'></script>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<%-include('partials/header')%>
+
+<div class="box">
+  <h1>Coffee Calculator</h1>
+
+  <form action="/" method="post">
+    <div class="container input-grid">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <h2>Brew Method: </h2>
+        </div>
+        <div class="col-12 col-md-5">
+          <h2><%= brewType %></h2>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-12 col-md-7">
+          <h2>Cup Quantity: </h2>
+        </div>
+        <div class="col-12 col-md-5">
+          <h2><%= cupQuantity %></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <h2>Grams of Water:</h2>
+        </div>
+        <div class="col-12 col-md-5">
+          <h2> <%= gramsOfWater %> g</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <h2>Grams of Coffee:</h2>
+        </div>
+        <div class="col-12 col-md-5">
+          <h2><%= gramsOfCoffee %> g</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <h2>Grind Type:</h2>
+        </div>
+        <div class="col-12 col-md-5">
+          <h2> <%= grindType %> </h2>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="brewInstructions">
+        <h2><%= brewType %> Brew Instructions</h2>
+        <ol>
+          <li>
+            <%= stepOne %>
+          </li>
+          <br>
+          <li>
+            <%= stepTwo %>
+          </li>
+          <br>
+          <li>
+            <%= stepThree %>
+          </li>
+          <br>
+          <li>
+            <%= stepFour %>
+          </li>
+          <br>
+          <li>
+            <%= stepFive %>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+
+    <%# Back Button %>
+    <div class="row">
+      <div class="col-12 calc-column">
+        <a href="/" class="btn btn-primary btn-lg buttons backButton" role="button" aria-disabled="true">Back</a>
+      </div>
+
+    </div>
+</div>
+</form>
+
+
+
+
+
+
+<%-include('partials/footer')%>
